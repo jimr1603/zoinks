@@ -11,11 +11,15 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Finding Sanctuary" startnode="1" creator="Twine" creator-version="2.3.2" ifid="3668DE3C-5A3F-447E-92EA-435E15DC0048" zoom="1" format="Harlowe" format-version="3.0.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+<tw-storydata name="Finding Sanctuary" startnode="1" creator="Twine" creator-version="2.3.2" ifid="3668DE3C-5A3F-447E-92EA-435E15DC0048" zoom="0.6" format="Harlowe" format-version="3.0.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 </script><tw-passagedata pid="1" name="Finding Sanctuary" tags="Title" position="140,52" size="100,100">By the ZOINKS Bards
 Originally published 2012, redone in 2016 &amp; 2019
-[[Introduction]] </tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="248,102" size="100,100">This story should take you 20-30 minutes to read through and will require you to complete several physical activities. You may do the activities as you go, or save them and log them later. Activities do not have to be completed in one workout.
+[[Introduction]] 
+(set: $workout_log to &quot;&quot;)
+</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="248,102" size="100,100">This story should take you 20-30 minutes to read through and will require you to complete several physical activities. You may do the activities as you go, or save them and log them later. Activities do not have to be completed in one workout.
 [[Memories]] </tw-passagedata><tw-passagedata pid="3" name="Memories" tags="" position="137,186" size="100,100">It’s the memories that hurt the most - memories of how it used to be, of friends, family, hobbies, hopes, dreams... Those are all gone now, and you&#39;ve got nothing left but yourself, a hiking backpack holding a few rapidly diminishing supplies, a big piece of iron pipe for protection, and a city full of undead ready to tear you limb from limb if they ever set eyes on you.
 
 You shift your position quietly in the semi-darkness, blinking away the last foggy remnants of too little sleep as you peek out into the gray, misty dawn. You know you need to stay alert, aware and focused. But you can’t stop the memories...
@@ -38,7 +42,12 @@ From what you can see from the edge of the parking lot, the store seems to be mo
 
 &lt;strong&gt;Complete 25 reps of bodyweight squats and 10 pushups (kneeling or inclined push-ups are acceptable) to simulate sneaking around. &lt;/strong&gt;
 
-[[Shopping Decisions]] </tw-passagedata><tw-passagedata pid="13" name="Shopping Decisions" tags="Decision-Point" position="812,37" size="100,100">After a few tense moments scuttling from car to car to avoid the lot zombies, you make it safely into the store. Where do you want to focus your energy (choose based on your typical workout level): 
+[[Shopping Decisions]] 
+
+(set: $workout_log to it + &quot;
+Complete at least 1 mile of walking, running, hiking, treadmill, elliptical or bicycle (stationery or outside). 
+
+Complete 25 reps of bodyweight squats and 10 pushups (kneeling or inclined push-ups are acceptable) to simulate sneaking around. &quot;)</tw-passagedata><tw-passagedata pid="13" name="Shopping Decisions" tags="Decision-Point" position="812,37" size="100,100">After a few tense moments scuttling from car to car to avoid the lot zombies, you make it safely into the store. Where do you want to focus your energy (choose based on your typical workout level): 
 &lt;em&gt;&lt;strong&gt;[[CANNED GOODS]]:&lt;/strong&gt; You’re a pretty strong person and you like to run heavy to maintain that strength, so you opt for canned food - you get more bang for the buck that way, in terms of calories to volume and getting a good workout. &lt;/em&gt;  
 &lt;em&gt;&lt;strong&gt;[[PRODUCE]]: &lt;/strong&gt;You’re fit enough, but between not eating right and not sleeping, you’re not sure you’re up to lifting and carrying the heavier items. Plus, you’re beginning to worry about vitamin deficiencies, so you decide to go see if any of the fresh fruit and veg is still edible.&lt;/em&gt;   
 &lt;em&gt;&lt;strong&gt;Boxed food and [[SNACKS]]:&lt;/strong&gt; You were never one of those muscle-bound jocks, and anyway you prefer to run light so you can stay mobile and agile. So you decide to load up on lighter foods like ready-to-eat boxed stuff, high-calorie snacks and jerky.&lt;/em&gt;</tw-passagedata><tw-passagedata pid="14" name="CANNED GOODS" tags="500ptsLift can_lifting_500" position="749,319" size="100,100">Double-click this passage to edit it.Because it&#39;s a big box store (with over 30,000 square feet of choices! - at least that’s what the commercials used to say) it takes you a few minutes to get to the canned goods aisles, and by the time you arrive, it hits you that the place is freakishly clean. No blood. No knocked over displays. No half eaten people. No killed zombies. The place is squeaky clean. Of all the weird shit you&#39;ve seen over the past several weeks, this is almost the weirdest.
@@ -47,19 +56,25 @@ Quietly, you begin loading canned goods into your bag. You don’t want to get s
 
 &lt;strong&gt;Log 500 points of any variety of deadlifts, weighted squats, rows and/or curls in any combination to simulate gathering and carrying canned goods. Add the text: &lt;em&gt;“Carrying 50lbs of canned goods. No creamed corn,”&lt;/em&gt; to the appropriate exercise notes or workout comments.&lt;/strong&gt;
 
+(set: $workout_log to it +  &quot;
+Log 500 points of any variety of deadlifts, weighted squats, rows and/or curls in any combination to simulate gathering and carrying canned goods. Add the text: &lt;em&gt;“Carrying 50lbs of canned goods. No creamed corn,”&lt;/em&gt; to the appropriate exercise notes or workout comments.&quot;)
+
 [[Continue]] </tw-passagedata><tw-passagedata pid="15" name="PRODUCE" tags="bodyweight_350" position="847,198" size="100,100">As you walk past the neat aisles to the produce section, you realize that the market is so clean that it almost seems like a normal day to you. You marvel at how easy it is to pretend the undead outside aren&#39;t there now that you have a chance to choose some food off the shelf again. When you get to the produce department, you&#39;re pleasantly surprised to find quite a bit of produce is still in edible, if not peak, condition. &lt;em&gt;Ah, the wonders of modern agriculture,&lt;/em&gt; you think to yourself. You figure you can fit about 35 pounds of fresh fruits and veggies into your pack if you focus on the tougher, better-traveling varieties.
 
 Just as you&#39;re strapping on the full pack, you catch something out of the corner of your eye and glance up to see a small, hooded person staring at you from the top of the shelves. You freeze instinctively, but they don&#39;t attack. You can’t tell who or what they are, but they are clearly not a zombie. How would a zombie get on top of the stacks of food and shelving anyway?
-
+(set: $bw_350 to 1)
 [[DONT-MOVE]]</tw-passagedata><tw-passagedata pid="16" name="SNACKS" tags="200ptsLowImpact low_impact_200" position="1000,325" size="100,100">You make your way to the snack aisles and get to work, focusing on grabbing calorie and nutrient dense stuff like jerky, nuts and trail mix (although you do snag a few treats, for morale). As you gather your supplies, it occurs to you that the store is exceptionally clean and well-maintained - there are no bodies, no disturbed items, nothing. In fact, it looks completely normal. And that gives you the creeps. &lt;em&gt;Nothing&lt;/em&gt; is normal anymore, which means this situation is eight shades of wrong. You&#39;ve learned to trust your instincts, and your instincts are saying, &quot;Get the hell out of here.&quot;
 
 With your hair standing on end, it doesn’t take you long to fill your pack, and you start making your way out the back of the store to see if you can scope out a safe campsite.
 
 &lt;strong&gt;Log 200 points worth of bodyweight, martial arts or yoga activities to simulate gathering your supplies while craning your head around like a weather vane the whole time. Add the text: &lt;em&gt;“Carrying 20lbs of high-energy snacks...and yes, I did grab a few boxes of Pop-Tarts, what’s it to you,”&lt;/em&gt; to the appropriate exercise notes or workout comments.&lt;/strong&gt;
 
-[[Continue]]</tw-passagedata><tw-passagedata pid="17" name="Continue" tags="" position="870,467" size="100,100">As you head out the back door of the store&#39;s loading area, you hear a noise behind you. There’s a rough tug at the collar of your jacket and you turn just in time to push a zombie away from you! &lt;em&gt;Shit!&lt;/em&gt; you think, as you scramble backwards to put some distance between you and the creature, &lt;em&gt;where did that come from?!?&lt;/em&gt;
+[[Continue]]
 
-Before you or the zombie can re-engage, {bodyweight_350:the hooded figure you saw earlier|a small hooded figure} leaps off the shelves above you swinging a sword and, with a silvery flash, twists like a cat, raising its hands above its head and then sweeping them down sharply. The zombie&#39;s decapitated head makes a hollow thud as it hits the tiles. Through your surprise, you realize you&#39;d probably better make friends with whoever just saved your ass.
+(set: $workout_log to it + &quot;
+Log 200 points worth of bodyweight, martial arts or yoga activities to simulate gathering your supplies while craning your head around like a weather vane the whole time. Add the text: &lt;em&gt;“Carrying 20lbs of high-energy snacks...and yes, I did grab a few boxes of Pop-Tarts, what’s it to you,”&lt;/em&gt; to the appropriate exercise notes or workout comments.&quot;)</tw-passagedata><tw-passagedata pid="17" name="Continue" tags="" position="870,467" size="100,100">As you head out the back door of the store&#39;s loading area, you hear a noise behind you. There’s a rough tug at the collar of your jacket and you turn just in time to push a zombie away from you! &lt;em&gt;Shit!&lt;/em&gt; you think, as you scramble backwards to put some distance between you and the creature, &lt;em&gt;where did that come from?!?&lt;/em&gt;
+
+Before you or the zombie can re-engage, (if: $bw_350 is 1)[the hooded figure you saw earlier](else:)[a small hooded figure] leaps off the shelves above you swinging a sword and, with a silvery flash, twists like a cat, raising its hands above its head and then sweeping them down sharply. The zombie&#39;s decapitated head makes a hollow thud as it hits the tiles. Through your surprise, you realize you&#39;d probably better make friends with whoever just saved your ass.
 
   + Ask who the person is.
         [[ASK]] 
@@ -153,6 +168,7 @@ As you lie there, panting and hurting, you hear crashing in the brush above you.
 You try to speak, but you’ve bitten your tongue badly in the fall. When you open your mouth, nothing comes out but an incomprehensible grunt and a trickle blood. 
 
 The woman takes a step back and raises her weapon. 
+(set: $duck to true)
 
 [[Hi??]]</tw-passagedata><tw-passagedata pid="31" name="Hands up" tags="" position="1441,680" size="100,100">You stop where you are - hell, you’re too tired to keep going anyway. Let them carry you the rest of the way if they’re going to be like that. 
 
@@ -161,7 +177,7 @@ The sentries on the roof keep their guns trained on you as two more people, each
 You realize what she&#39;s about to do and what you must look like to these people: filthy, bedraggled, and so tired you&#39;re staggering like a drunk, like a... like a zombie.
 
 The knife-wielder steps closer.
-
+(set: $duck to false)
 [[Your Mouth is Still]]</tw-passagedata><tw-passagedata pid="32" name="Your Mouth is Still" tags="" position="1564,728" size="100,100">You stop where you are - hell, you’re too tired to keep going anyway. Let them carry you the rest of the way if they’re going to be like that. 
 
 The sentries on the roof keep their guns trained on you as two more people, each of whom look strong enough to snap your apocalypse-starved body in two with their bare hands, approach from a gate beyond the long building. One of them lifts a knife up to your head height and comes at you pointy end first.
@@ -171,11 +187,11 @@ You realize what she&#39;s about to do and what you must look like to these peop
 The knife-wielder steps closer.
 [[eek]]</tw-passagedata><tw-passagedata pid="33" name="eek" tags="" position="1691,773" size="100,100">The knife-wielder exchanges her weapon for a thermometer, but the two sentries on the roof keep their rifles trained on you while she takes your temperature. It checks out - right in the range of alive and kicking. You also have a few cuts and scratches from your encounter with the zombie on the road and subsequent flight through the scrub. At the sight of these wounds, both of your greeters step back to a safe distance and motion for you to walk ahead of them toward the gates of their camp.
 
-[[Camp!]]</tw-passagedata><tw-passagedata pid="34" name="Camp!" tags="" position="1755,653" size="100,100">Your rescuers {duck:carry|herd} you toward a small door set in the front of the building just beyond the camp&#39;s gate.  A person in full isolation gear steps through the door and tells you to strip.  You look around at your audience, but their weapons remind you this is no time for modesty.  You do as you&#39;re told.
+[[Camp!]]</tw-passagedata><tw-passagedata pid="34" name="Camp!" tags="" position="1755,653" size="100,100">Your rescuers (if: $duck)[carry](else:)[herd] you toward a small door set in the front of the building just beyond the camp&#39;s gate.  A person in full isolation gear steps through the door and tells you to strip.  You look around at your audience, but their weapons remind you this is no time for modesty.  You do as you&#39;re told.
 
 The person in the haz-mat suit tosses your filthy clothes into a burning barrel.  A second person, also in haz-mat gear, takes charge of your backpack and examines its contents. 
 
-You’re {duck:helped|led} through the door, down a narrow corridor and into a communal shower area. After a quick (and COLD) shower, you’re {duck:helped|led} through another door into a locker room containing several low benches and a lot of bright lights. The room is heavily stocked with armed guards whose eyes follow you like dogs tracking a rabbit as you {duck:hobble|drag} your exhausted, bleeding, and bruised body over to a medical-looking person in a blue haz-mat suit.
+You’re (if: $duck)[helped](else:)[led] through the door, down a narrow corridor and into a communal shower area. After a quick (and COLD) shower, you’re (if: $duck)[helped](else:)[led] through another door into a locker room containing several low benches and a lot of bright lights. The room is heavily stocked with armed guards whose eyes follow you like dogs tracking a rabbit as you (if: $duck)[hobble](else:)[drag] your exhausted, bleeding, and bruised body over to a medical-looking person in a blue haz-mat suit.
 
 [[Medic]]</tw-passagedata><tw-passagedata pid="35" name="Hi??" tags="" position="1579,500" size="100,100">You try to get up, but the second you put any weight on your right leg, a tsunami of pain surges through your body.  You feel your consciousness starting to slip. 
 
@@ -189,7 +205,7 @@ Your vision starts to clear, and you can see another woman approaching through t
 
 “Looks like we’ve got a survivor. Bring ‘em in.”
 
-[[Camp!]] </tw-passagedata><tw-passagedata pid="37" name="Medic" tags="" position="1878,694" size="100,100">The medic points at one of the benches, and you sit.  Your body is flooded with such relief that you almost pass out then and there. You just barely manage to stay upright as the doc starts his examination, marking your injuries on a chart as he goes {duck:and wrapping your ankle.|.} 
+[[Camp!]] </tw-passagedata><tw-passagedata pid="37" name="Medic" tags="" position="1878,694" size="100,100">The medic points at one of the benches, and you sit.  Your body is flooded with such relief that you almost pass out then and there. You just barely manage to stay upright as the doc starts his examination, marking your injuries on a chart as he goes (if: $duck)[and wrapping your ankle.]
 
 You start to zone out as the doc finishes with your front and moves to examine your back, but a sudden noise behind you snaps you awake. You turn just in time to see the doc stepping back as this group&#39;s leader steps through a door at the far end of the room.
 
@@ -213,28 +229,15 @@ With that pronouncement, the leader turns and exits the locker room--cum--bio-ha
 
 As the door swings shut behind her, the spell she held over you starts to fade. Whoever she is, she knows how to command a room. You wouldn&#39;t cross her if it meant your life - which it probably would.
 
-[[Ready2Start]]</tw-passagedata><tw-passagedata pid="41" name="Ready2Start" tags="" position="1999,212" size="100,100">You’re given a fresh change of clothing and your pack is returned to you - empty of food, but with all your personal items intact. A guard leads you out of the locker room, through a large water park-turned-greenhouse, across a courtyard and into the camp&#39;s main building.  Here you are taken into a small room, sat down at a desk, and handed a sheaf of papers and a pen.  It turns out that, just like zombies, bureaucracy never dies.
+[[Ready2Start]]</tw-passagedata><tw-passagedata pid="41" name="Ready2Start" tags="" position="1999,210.33333333333334" size="100,100">You’re given a fresh change of clothing and your pack is returned to you - empty of food, but with all your personal items intact. A guard leads you out of the locker room, through a large water park-turned-greenhouse, across a courtyard and into the camp&#39;s main building.  Here you are taken into a small room, sat down at a desk, and handed a sheaf of papers and a pen.  It turns out that, just like zombies, bureaucracy never dies.
 
 The forms are pretty straightforward and it doesn&#39;t take long to fill them out. Once you do, your eyelids become even heavier than they already were. The guard notes your yawn and steps up to take your papers.  Then he leads you upstairs to a long room with an odd assortment of beds, bare box-springs, and mattresses lining the floor along one long wall.  He points to a stained and lumpy box-spring in the corner which obviously harbours several broken coils.
 
 &quot;That one&#39;s yours.&quot;
 
 You drop your pack on the floor and lay down on top of the box-spring. For a moment you wonder if you’re going to be able to sleep in this strange new place, on a lumpy bed with broken springs digging into your back and hips. But you&#39;ve scarcely finished the thought before you’re out like a [[Light]].</tw-passagedata><tw-passagedata pid="42" name="Light" tags="" position="2119,181" size="100,100">Your workout activities for this adventure are:
+(print: $workout_log)
 
-&lt;strong&gt;Complete at least 1 mile of walking, running, hiking, treadmill, elliptical or bicycle (stationary or outside).&lt;/strong&gt;
-&lt;strong&gt;Complete 25 reps of bodyweight squats and 10 push-ups (kneeling and inclined push-ups are acceptable) to simulate sneaking around.&lt;/strong&gt;
-
-{LowImpact200 :
-    &lt;strong&gt;Log 200 points worth of bodyweight, martial arts or yoga activities to simulate gathering your supplies while craning your head around like a weather vane the whole time.  Add the text: &lt;em&gt;&quot;Carrying 20lbs. of high-energy snacks... and yes, I did grab a few boxes of Pop-Tarts, what&#39;s it to you?&quot;&lt;/em&gt; to the appropriate exercise notes or workout comments.&lt;/strong&gt;
-}
-
-{ bodyweight350 :
-    &lt;strong&gt;Log 350 points of bodyweight or dumbbell/kettlebell activities to simulate gathering and carrying a backpack&#39;s worth of produce.  Add the text: &lt;em&gt;&quot;Carrying 35lbs. of produce, but no eggplant.  Eggplant can rot and die!&quot;&lt;/em&gt; to the exercise notes or workout comments.&lt;/strong&gt;
-}
-
-{canlifting500 :
-    &lt;strong&gt;Log 500 points of any variety of deadlifts, weighted squats, rows and/or curls in any combination to simulate gathering and carrying canned goods.  Add the text: &lt;em&gt;&quot;Carrying 50lbs. of canned goods.  No creamed corn.&quot;&lt;/em&gt; to the appropriate exercise notes or workout comments.&lt;/strong&gt;
-}
 
 When you have completed and logged all of the above activities, [https://docs.google.com/spreadsheets/d/1-jQWw96VfMIjP9RLVjADHB2DvHKjlbiso_efxODN2mw/edit#gid=937944563|go here to submit your logs].
 
